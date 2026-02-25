@@ -22,7 +22,9 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(
     ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("Redis")));
 
 builder.Services.AddScoped<IDistributedLock, RedisDistributedLock>();
-builder.Services.AddScoped<IReservationService, ReservationService>();
+builder.Services.AddScoped<IAvailabilityCache, AvailabilityCache>();
+builder.Services.AddScoped<IIdempotencyService, RedisIdempotencyService>();
+builder.Services.AddScoped<ReservationService>();
 
 var app = builder.Build();
 

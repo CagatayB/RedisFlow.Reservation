@@ -1,7 +1,7 @@
 ﻿using ReservationSystem.src.Application.Interfaces;
 using StackExchange.Redis;
 
-namespace ReservationSystem.src.Application.Commands
+namespace ReservationSystem.src.Application.Services
 {
     public class RedisDistributedLock : IDistributedLock
     {
@@ -18,8 +18,7 @@ namespace ReservationSystem.src.Application.Commands
                 key,
                 Environment.MachineName,
                 expiry,
-                When.NotExists
-            );
+                When.NotExists);
         }
 
         public async Task ReleaseAsync(string key)

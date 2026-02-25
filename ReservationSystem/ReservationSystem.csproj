@@ -22,9 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\API\Controllers\" />
     <Folder Include="src\API\Extensions\" />
-    <Folder Include="src\Infrastructure\Caching\" />
     <Folder Include="src\Infrastructure\Locking\" />
   </ItemGroup>
 
