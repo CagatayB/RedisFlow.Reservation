@@ -1,4 +1,4 @@
-# 🚀 High-Scale Reservation System (.NET 8)
+# 🚀 Redis Reservation System (.NET 8)
 
 ![.NET](https://img.shields.io/badge/.NET-8-blue)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
